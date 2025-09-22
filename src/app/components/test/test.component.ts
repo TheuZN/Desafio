@@ -17,7 +17,7 @@ export class TestComponent {
   btnText = "";
 
   ngOnInit() {
-    const savedNota = localStorage.getItem('notaFinal');
+    const savedNota = localStorage.getItem('finalResult');
     const statusTest1 = localStorage.getItem('test1');
     const statusTest2 = localStorage.getItem('test2');
     const statusTest3 = localStorage.getItem('test3');
