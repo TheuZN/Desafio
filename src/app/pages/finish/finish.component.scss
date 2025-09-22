@@ -1,0 +1,25 @@
+p {
+    font-size: 2rem;
+}
+
+svg {
+    width: 5rem;
+}
+
+.finish__btn {
+    display: flex;     
+    align-items: center;
+    margin-block: 1rem;
+    color: #1E3A8A;
+    font-weight: 900;
+}
+
+.result__image {
+
+  img {
+    width: 50rem;     
+    height: 30rem;     
+    object-fit: cover;  
+    border-radius: 2rem; 
+  }
+}

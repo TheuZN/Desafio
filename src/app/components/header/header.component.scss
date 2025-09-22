@@ -1,0 +1,61 @@
+header {
+    width: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    position: fixed;
+    padding-block: 0.8rem;
+    background-color: #fff;
+    z-index: 100;
+
+    @media screen and (min-width: 1024px) {
+        padding-block: 1.1rem;
+    }
+
+    svg {
+        width: 3rem;
+
+        @media screen and (min-width: 1024px) {
+            width: 4rem;
+        }
+    }
+
+    .menu {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 2rem;
+            letter-spacing: 0.1;
+
+            span {
+                color: #1E3A8A;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 2.8rem;
+            }
+
+        }
+
+        &__theme {
+
+            button {
+                display: flex;
+                align-self: center;
+            }
+
+        }
+    }
+}
+
+.dark-theme {
+    background-color: #0F172A;
+    color: #ffffff;
+}

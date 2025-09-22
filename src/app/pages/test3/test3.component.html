@@ -1,0 +1,35 @@
+<app-header />
+
+<section>
+  <div class="wrapper">
+    <h2 class="title_test_h2">Exercício 3/3</h2>
+    <p>Você tem 3 tentativas para acertar a opção correta e finalizar o teste.</p>
+
+    <div class="title_test">
+      <p>Onde você encontra a opção de criar uma nova playlist no celular?</p>
+      <p>Selecione apenas uma opção correta:</p>
+    </div>
+
+    <form (ngSubmit)="checkTest3()">
+      <label>
+        Escolha uma opção:
+        <select [(ngModel)]="selectedAnswer" name="ex3" [disabled]="isDisabled()" required>
+          <option [ngValue]="null">-- Selecione --</option>
+          <option *ngFor="let option of options" [ngValue]="option.id">
+            {{ option.text }}
+          </option>
+        </select>
+      </label>
+
+      <button class="btn_test" type="submit" [disabled]="isDisabled()">Confirmar</button>
+    </form>
+
+    <div *ngIf="feedback" class="feedback">
+      {{ feedback }}
+    </div>
+
+    <button class="btn_test" *ngIf="goToFinish" (click)="finishTest()">
+      Finalizar Teste
+    </button>
+  </div>
+</section>

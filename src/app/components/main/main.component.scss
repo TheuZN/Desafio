@@ -1,0 +1,63 @@
+main {
+    padding-top: 7rem;
+    text-align: left;
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 10rem;
+    }
+
+    .agroup {
+        @media screen and (min-width: 1024px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "A B";
+            gap: 7rem;
+        }
+
+        &__textMain {
+            h3 {
+                font-size: 1.4rem;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 2rem
+                }
+            }
+
+            h1 {
+                color: #1E3A8A;
+                margin-block: 1rem;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 4rem
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 2rem
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                grid-area: A;
+                align-self: center;
+            }
+        }
+
+        &__imgMain {
+            img {
+                margin-top: 1rem;
+                border-radius: 2rem;
+            }
+
+            @media screen and (min-width: 1024px) {
+                grid-area: B;
+            }
+        }
+    }
+
+
+}

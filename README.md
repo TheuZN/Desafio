@@ -1,27 +1,38 @@
-# SpotifyHelper
+## SpotifyHelper
+Aplicação web desenvolvida como parte de um curso auto-instrucional, criada para o teste técnico de front-end.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+O projeto simula uma plataforma educacional, onde o usuário realiza atividades em sequência, recebe feedback imediato e tem seu progresso armazenado.
 
-## Development server
+## ✨ Processo Criativo
+Para iniciar o projeto, busquei referências em plataformas educacionais com propostas semelhantes, como Fundação Bradesco, Khan Academy e Canvas, além de explorar inspirações de design no Pinterest. O objetivo principal foi manter o conteúdo direto e a aplicação simples, garantindo uma navegação intuitiva e usabilidade acessível para cumprir os requisitos do desafio.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ⚙️ Decisões Técnicas
+Angular 17: framework robusto para lidar com componentes, rotas e formulários de maneira estruturada.
+Typescript: tipagem estática para maior segurança e clareza no desenvolvimento.
+LocalStorage: persistência simples do progresso do usuário e tentativas sem depender de backend.
+RxJS + HttpClient: para consumir dados da API do Unsplash.
+SCSS: melhor organização e reaproveitamento de estilos.
+API Unsplash: geração dinâmica de imagens de acordo com o resultado do usuário, deixando a experiência mais imersiva.
 
-## Code scaffolding
+## 🚀 Funcionalidades
+✅ Progressão controlada.
+✅ Persistência de dados no navegador.
+✅ Feedback dinâmico a cada resposta.
+✅ Bloqueio de páginas após término das atividades.
+✅ Tema claro e escuro.
+✅ Página de resultado final com cálculo de nota.
+✅ Limite de 3 tentativas por atividade.
+✅ Exercícios com múltipla escolha, escolha única e combobox.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📱 Outros Requisitos
+Mobile-first.
+Responsividade.
+Otimização de imagens.
 
-## Build
+## 🥚 Easter Egg
+Testou a aplicação e as informações ficaram salvas?
+Clique no botão com o nome do projeto dentro do footer para resetar e testar novamente.
+![alt text](image.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🤖 IA
+Durante o desenvolvimento, utilizei inteligência artificial como apoio para criação de conteúdos e esclarecimento de dúvidas específicas.

@@ -1,0 +1,32 @@
+<app-header />
+
+<section>
+  <div class="wrapper">
+    <h2 class="title_test_h2">Exercício 2/3</h2>
+    <p>Você tem 3 tentativas para acertar as opções corretas e avançar para a próxima etapa do teste.</p>
+
+    <div class="title_test">
+      <p>Selecione mais de uma opção correta:</p>
+    </div>
+
+    <form (ngSubmit)="checkTest2()">
+      <div *ngFor="let option of options">
+        <label>
+          <input type="checkbox" [value]="option.id" (change)="toggleSelection(option.id, $event)"
+            [checked]="selectedAnswers.includes(option.id)" [disabled]="isDisabled()" name="ex2" />
+          {{ option.text }}
+        </label>
+      </div>
+
+      <button class="btn_test" type="submit" [disabled]="isDisabled()">Confirmar</button>
+    </form>
+
+    <div *ngIf="feedback" class="feedback">
+      {{ feedback }}
+    </div>
+
+    <button class="btn_test" (click)="goToTheTest3()" *ngIf="goToTest3">
+      Ir para o teste 3
+    </button>
+  </div>
+</section>

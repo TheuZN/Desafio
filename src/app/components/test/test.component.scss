@@ -1,0 +1,32 @@
+.test {
+    padding-block: 5rem;
+
+    &__status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: 1024px) {
+            justify-self: center;
+            width: 50%;
+            font-size: 2rem
+        }
+    }
+
+    &__btn {
+        button {
+            width: 100%;
+            padding-block: 1.5rem;
+            color: white;
+            font-weight: 900;
+            background-color: #1E3A8A;
+            margin-block: 3rem;
+            font-size: 2.2rem;
+            border-radius: 2rem;
+
+            @media screen and (min-width: 1024px) {
+                width: 50%;
+            }
+        }
+    }
+}

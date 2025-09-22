@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="test">
+        <div class="test__status">
+            <span>Resultado da avaliação:</span>
+            <span *ngIf="score !== null">{{ score }}</span>
+            <span *ngIf="score === null">Ainda não avaliado.</span>
+        </div>
+
+        <div class="test__btn">
+            <button (click)="getConfirmation()" [disabled]="score !== 'Ainda não avaliado.'">
+                {{ btnText }}
+            </button>
+        </div>
+    </div>
+</div>
